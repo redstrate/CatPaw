@@ -25,7 +25,10 @@ CatPawEffect::CatPawEffect()
     connect(effects, &EffectsHandler::mouseChanged, this, &CatPawEffect::slotMouseChanged);
 }
 
-CatPawEffect::~CatPawEffect() = default;
+CatPawEffect::~CatPawEffect()
+{
+    effects->showCursor();
+}
 
 void CatPawEffect::reconfigure(ReconfigureFlags)
 {
