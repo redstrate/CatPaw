@@ -19,5 +19,5 @@ public:
     void save() override;
 
 private:
-    KWin::Ui_MouseClickEffectConfigForm m_ui;
+    Ui::CatPawEffectConfigForm m_ui;
 };

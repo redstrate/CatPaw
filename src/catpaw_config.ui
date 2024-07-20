@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>KWin::MouseClickEffectConfigForm</class>
+ <class>CatPawEffectConfigForm</class>
  <widget class="QWidget" name="KWin::MouseClickEffectConfigForm">
   <property name="geometry">
    <rect>
