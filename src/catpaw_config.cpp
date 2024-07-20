@@ -18,7 +18,7 @@ CatPawEffectConfig::CatPawEffectConfig(QObject *parent, const KPluginMetaData &d
 {
     m_ui.setupUi(widget());
 
-    addConfig(KWin::CatPawConfig::self(), widget());
+    addConfig(CatPawConfig::self(), widget());
 }
 
 void CatPawEffectConfig::save()

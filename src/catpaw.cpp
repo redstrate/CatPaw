@@ -11,14 +11,10 @@
 #include "core/renderviewport.h"
 #include "effect/effecthandler.h"
 
-#include <QPainter>
-#include <QTabletEvent>
-
 #include <cmath>
 #include <opengl/openglcontext.h>
 
-namespace KWin
-{
+using namespace KWin;
 
 CatPawEffect::CatPawEffect()
 {
@@ -185,7 +181,5 @@ QColor CatPawEffect::kittyColor() const
 {
     return m_kittyColor;
 }
-
-} // namespace
 
 #include "moc_catpaw.cpp"

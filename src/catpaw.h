@@ -11,17 +11,15 @@
 
 #include <KLocalizedString>
 
-namespace KWin
-{
-
-class CatPawEffect : public Effect
+class CatPawEffect : public KWin::Effect
 {
     Q_OBJECT
 public:
     CatPawEffect();
     ~CatPawEffect() override;
     void reconfigure(ReconfigureFlags) override;
-    void paintScreen(const RenderTarget &renderTarget, const RenderViewport &viewport, int mask, const QRegion &region, Output *screen) override;
+    void
+    paintScreen(const KWin::RenderTarget &renderTarget, const KWin::RenderViewport &viewport, int mask, const QRegion &region, KWin::Output *screen) override;
     void postPaintScreen() override;
 
     // for properties
@@ -37,11 +35,9 @@ private Q_SLOTS:
 
 private:
     void repaint();
-    void drawKitty(const RenderTarget &renderTarget, const RenderViewport &viewport);
+    void drawKitty(const KWin::RenderTarget &renderTarget, const KWin::RenderViewport &viewport);
 
     QColor m_kittyColor;
     QPointF m_cursorPos;
     bool m_pressed = false;
 };
-
-} // namespace

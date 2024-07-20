@@ -6,11 +6,6 @@
 
 #include "catpaw.h"
 
-namespace KWin
-{
-
 KWIN_EFFECT_FACTORY(CatPawEffect, "metadata.json")
-
-} // namespace KWin
 
 #include "main.moc"
