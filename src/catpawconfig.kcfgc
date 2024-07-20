@@ -1,0 +1,5 @@
+File=catpaw.kcfg
+ClassName=CatPawConfig
+NameSpace=KWin
+Singleton=true
+Mutators=true
