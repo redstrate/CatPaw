@@ -94,8 +94,9 @@ void CatPawEffect::drawKitty(const RenderTarget &renderTarget, const RenderViewp
         verts.clear();
         verts.reserve(1.0f);
 
-        QPointF arrow_tail = viewport.renderRect().bottomRight();
+        QPointF arrow_tail;
         arrow_tail.setX(m_cursorPos.x() + 200.0f);
+        arrow_tail.setY(viewport.renderRect().bottomRight().y() + 50);
         QPointF arrow_head = m_cursorPos;
 
         double angle = atan2((double)(arrow_tail.y() - arrow_head.y()), (double)(arrow_tail.x() - arrow_head.x()));
