@@ -16,18 +16,18 @@
      <item row="0" column="0">
       <widget class="QLabel" name="button1_label">
        <property name="text">
-        <string>&amp;Kitty Color:</string>
+        <string>Kitty Color:</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
        </property>
        <property name="buddy">
-        <cstring>kcfg_Color1</cstring>
+        <cstring>kcfg_KittyColor</cstring>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="KColorCombo" name="kcfg_kittyColor">
+      <widget class="KColorCombo" name="kcfg_KittyColor">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
          <horstretch>0</horstretch>

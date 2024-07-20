@@ -18,7 +18,6 @@ using namespace KWin;
 
 CatPawEffect::CatPawEffect()
 {
-    CatPawConfig::instance(effects->config());
     effects->hideCursor();
 
     reconfigure(ReconfigureAll);
